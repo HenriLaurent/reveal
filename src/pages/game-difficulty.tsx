@@ -21,6 +21,8 @@ export default function GameDifficulty() {
       <ul className="flex gap-8" ref={scope}>
         <motion.li
           id="bronze"
+          initial={{ opacity: 0, y: -300 }}
+          animate={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
           onClick={() => handleClick("EASY")}
           className="w-48 cursor-pointer flex flex-col items-center gap-8 bg-gray-50 bg-opacity-25 p-12 rounded-2xl"
@@ -32,6 +34,8 @@ export default function GameDifficulty() {
         </motion.li>
         <motion.li
           id="silver"
+          initial={{ opacity: 0, y: -300 }}
+          animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
           whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
           onClick={() => handleClick("MEDIUM")}
           className="w-48 cursor-pointer flex flex-col items-center gap-8 bg-gray-50 bg-opacity-25 p-12 rounded-2xl"
@@ -43,6 +47,8 @@ export default function GameDifficulty() {
         </motion.li>
         <motion.li
           id="gold"
+          initial={{ opacity: 0, y: -300 }}
+          animate={{ opacity: 1, y: 0, transition: { delay: 0.4 } }}
           whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
           onClick={() => handleClick("HARD")}
           className="w-48 cursor-pointer flex flex-col items-center gap-8 bg-gray-50 bg-opacity-25 p-12 rounded-2xl"
@@ -54,6 +60,8 @@ export default function GameDifficulty() {
         </motion.li>
         <motion.li
           id="diamond"
+          initial={{ opacity: 0, y: -300 }}
+          animate={{ opacity: 1, y: 0, transition: { delay: 0.6 } }}
           whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
           onClick={() => handleClick("EXTREME")}
           className="w-48 cursor-pointer flex flex-col items-center gap-8 bg-gray-50 bg-opacity-25 p-12 rounded-2xl"
