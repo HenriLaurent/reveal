@@ -31,7 +31,7 @@ export default function Word({ word, foundLetters }: WordProps) {
               letter.isFound ? "opacity-1" : "opacity-0"
             )}
           >
-            {letter.letter}
+            {letter.isFound ? <>{letter.letter}</> : <>*</>}
           </p>
         </div>
       ))}
